@@ -9,6 +9,7 @@
           :key="symbol"
           @click="handleMath(symbol)"
           :style="buttonStyle"
+          :disabled="(symbol == '/' || symbol == '//') && second == 0"
       >
         {{ symbol }}
       </button>
